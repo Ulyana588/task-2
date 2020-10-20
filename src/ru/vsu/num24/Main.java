@@ -19,9 +19,9 @@ public class Main {
         if(box1[0] > box2[0] && box1[1] > box2[1] && box1[2] > box2[2]) currentAnswer = Answer.BOX_2_FITS_IN_1;
         else if(box1[0] < box2[0] && box1[1] < box2[1] && box1[2] < box2[2]) currentAnswer = Answer.BOX_1_FITS_IN_2;
         else currentAnswer = Answer.BOXES_CANNOT_BE_PLACED_INSIDE_ONE_ANOTHER;
-        outputAnswer(currentAnswer);
+        outputAnswerToConsole(currentAnswer);
     }
-    public static void outputAnswer(Answer currentAnswer) {
+    public static void outputAnswerToConsole(Answer currentAnswer) {
         System.out.println(currentAnswer);
     }
 
